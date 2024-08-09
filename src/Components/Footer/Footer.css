@@ -1,0 +1,36 @@
+.main__footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.5rem var(--horizontal-padding);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer__part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__part .address {
+    text-align: center;
+}
+
+.footer__part .info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sub__footer {
+    font-weight: bold;
+    text-align: center;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 1.5rem 0rem;
+}
