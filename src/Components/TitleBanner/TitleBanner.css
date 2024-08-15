@@ -1,0 +1,24 @@
+.title__banner {
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(90deg, #66666613, rgba(165, 201, 234, 0.1) 98.22%),
+    url('../../Assets/Images/banner.png') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page__info {
+    color: var(--white);
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.page__title, .page__description {
+    text-align: center;
+}
