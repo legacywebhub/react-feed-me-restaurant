@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <div className="main__header">
         <div className="main__header__left">
-          <img src={Logo} alt="logo" className="logo" />
+          <a href="/"><img src={Logo} alt="logo" className="logo" /></a>
         </div>
         <div className="main__header__right">
           <span>Home</span>

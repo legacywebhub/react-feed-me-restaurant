@@ -5,6 +5,9 @@ import { FaPhone, FaClock } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div>
+        <div className='footer__title'>
+          Our Branch
+        </div>
         <div className='main__footer'>
           <div className='footer__part'>
             <h3>Robert Food</h3>
