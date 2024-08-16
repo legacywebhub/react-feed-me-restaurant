@@ -22,11 +22,6 @@
     font-weight: bold;
 }
 
-.meal__price {
-    font-weight: bold;
-    font-style: italic;
-}
-
 .meal__img {
     width: 100px;
     height: 100px;
