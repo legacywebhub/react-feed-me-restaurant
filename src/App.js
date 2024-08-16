@@ -5,7 +5,7 @@ import Meal from "./Pages/Meal/Meal";
 import Search from "./Pages/Search/Search";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import SingleItem from "./Pages/SingleItem/SingleItem";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

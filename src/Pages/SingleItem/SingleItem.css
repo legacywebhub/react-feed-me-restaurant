@@ -21,9 +21,8 @@
   }
 
   .single-item__container {
-    /* padding: 20px 0; */
+    padding: 20px 0;
     margin: auto 0;
-    max-width: 100%x;
   }
   
   .single-item__description {
@@ -36,22 +35,23 @@
   
   .single-item__image {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px; 
   }
   .single-item__description__left{
-    max-width: 550px; 
+    max-width: 600px; 
     
   }
   .single-item__description__right{
-    display: block;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
   }
   
   .single-item__type {
     font-size: 20px;
-    color: #333;
+    color: var(--mild-dark);
     margin: 10px 0;
     text-align: start;
   }

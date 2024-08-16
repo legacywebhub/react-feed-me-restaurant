@@ -1,9 +1,9 @@
+import "./SingleItem.css";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import BgImg from "../../Assets/Images/single-item-hero.png";
 import Pancake from "../../Assets/Images/pancake.png"
 import styled from 'styled-components';
-import "./SingleItem.css";
 
 const BackgroundDiv = styled.div`
   background-image: url(${BgImg});
