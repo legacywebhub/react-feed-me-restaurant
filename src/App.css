@@ -26,6 +26,7 @@
     font-family: 'Lato' !important;
     min-height: 100vh;
     width: 100vw !important;
+    max-width: 100vw !important;
     background: var(--background) !important;
     color: var(--dark-dark) !important;
     font-size: 1.5rem;

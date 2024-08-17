@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import './MealSection.css'
-import Title from '../Title/Title'
-import Meal from  '../Meal/Meal'
-import mealsData from '../../Assets/Data/Data'
+import React, { createContext, useState, useEffect } from 'react';
+import mealsData from '../Assets/Data/Data'
 
+export const MealsContext = createContext();
 
-const MealSection = () => {
+export const MealsProvider = ({ children }) => {
   const [meals, setMeals] = useState([]); // Start with empty array to indicate no data yet
 
   useEffect(() => {
@@ -25,24 +23,9 @@ const MealSection = () => {
     fetchMeals();
   }, []);
 
-  if (meals.length < 1) {
-    return <p>Loading meals...</p>; // Show a loading state while fetching data
-  }
-
   return (
-    <>
-      <Title title="Our Menu" />
-      <div className='meal__section'>
-        {meals.map((meal) => (
-          <Meal
-          key={meal.id}
-          mealName={meal.name}
-          mealType={meal.type}
-          />
-        ))}
-      </div>
-    </>
-  )
-}
-
-export default MealSection
+    <MealsContext.Provider value={meals}>
+      {children}
+    </MealsContext.Provider>
+  );
+};
