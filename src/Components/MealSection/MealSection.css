@@ -1,33 +1,9 @@
 .meal__section {
+    width: 100vw;
     padding: 2rem var(--horizontal-padding);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto; /* Adjust rows as needed */
-    gap: 16px;
-    grid-template-areas:
-        "meal1 image1 meal2"
-        "meal3 image1 meal4"
-        "meal5 image2 image2"
-        "meal6 meal7 meal8";
-}
-
-.predefined__image__portrait {
-    grid-area: image1;
-    background: url('../../Assets/Images/banner_portrait.png') no-repeat center center;
-    background-size: cover;
-    height: 300px;
-}
-
-.predefined__image__landscape {
-    grid-area: image2;
-    background: url('../../Assets/Images/banner_landscape.png') no-repeat center center;
-    background-size: cover;
-    height: 200px; /* Adjust as needed */
-    width: 100%; /* Ensure it spans full width */
-}
-
-@media (max-width: 768px) {
-    .meal-section {
-        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
