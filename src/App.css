@@ -42,6 +42,7 @@
     padding: 1rem 1rem;
     color: var(--white);
     background-color: var(--primary);
+    cursor: pointer;
   }
   
   .container {
