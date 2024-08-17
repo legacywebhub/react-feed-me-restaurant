@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './MealSection.css'
+import Title from '../Title/Title'
 import Meal from  '../Meal/Meal'
 import mealsData from '../../Assets/Data/Data'
 
@@ -29,18 +30,18 @@ const MealSection = () => {
   }
 
   return (
-    <div className='meal__section'>
-      <div className="predefined__image__portrait"></div>
-      <div className="predefined__image__landscape"></div>
-
-      {meals.map((meal) => (
-        <Meal
-        key={meal.id}
-        mealName={meal.name}
-        mealType={meal.type}
-        />
-      ))}
-    </div>
+    <>
+      <Title title="Our Menu" />
+      <div className='meal__section'>
+        {meals.map((meal) => (
+          <Meal
+          key={meal.id}
+          mealName={meal.name}
+          mealType={meal.type}
+          />
+        ))}
+      </div>
+    </>
   )
 }
 

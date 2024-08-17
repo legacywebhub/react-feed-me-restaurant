@@ -1,13 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import Title from '../Title/Title'
 import { FaPhone, FaClock } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div>
-        <div className='footer__title'>
-          Our Branch
-        </div>
+        <Title title="Our Branch" />
         <div className='main__footer'>
           <div className='footer__part'>
             <h3>Robert Food</h3>
