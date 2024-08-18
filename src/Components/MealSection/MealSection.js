@@ -3,6 +3,7 @@ import './MealSection.css'
 import Title from '../Title/Title'
 import Meal from  '../Meal/Meal'
 import mealsData from '../../Assets/Data/Data'
+import Loading from '../Loading/Loading'
 
 
 const MealSection = () => {
@@ -26,7 +27,7 @@ const MealSection = () => {
   }, []);
 
   if (meals.length < 1) {
-    return <p>Loading meals...</p>; // Show a loading state while fetching data
+    return <Loading />; // Show a loading state while fetching data
   }
 
   return (
@@ -36,6 +37,7 @@ const MealSection = () => {
         {meals.map((meal) => (
           <Meal
           key={meal.id}
+          mealId={meal.id}
           mealName={meal.name}
           mealType={meal.type}
           />

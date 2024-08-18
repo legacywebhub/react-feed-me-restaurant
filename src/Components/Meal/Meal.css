@@ -39,6 +39,10 @@
   color: #333;
 }
 
+.meal__name a {
+  color: var(--secondary);
+}
+
 @media (max-width: 72rem) {
   .meal {
     width: 40%; /* Adjust width as needed */

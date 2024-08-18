@@ -1,0 +1,19 @@
+.not__found__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.not__found__container h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.not__found__container p {
+    font-size: 1.5rem;
+    color: #555;
+}
