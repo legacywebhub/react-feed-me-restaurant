@@ -1,0 +1,9 @@
+.results__section {
+    width: 100vw;
+    padding: 2rem var(--horizontal-padding);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

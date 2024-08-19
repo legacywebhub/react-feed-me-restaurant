@@ -1,4 +1,4 @@
-import './Home.css';
+import './HomePage.css';
 import Ad from "../../Components/Ad/Ad";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -7,7 +7,7 @@ import SearchSection from "../../Components/SearchSection/SearchSection";
 import MealSection from '../../Components/MealSection/MealSection';
 
 
-function Home() {
+function HomePage() {
   let pageTitle = "WELCOME TO FEED ME",
   pageDescription = `Where you can search and order the best and latest meals from all over the world`;
 
@@ -26,4 +26,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
