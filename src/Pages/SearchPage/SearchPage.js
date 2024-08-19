@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 
-function Search() {
+function SearchPage() {
   return (
     <div>
       <Header />
@@ -10,4 +10,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchPage;

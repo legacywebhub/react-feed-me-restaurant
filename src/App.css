@@ -1,62 +1,70 @@
 *, *::after, *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  html {
-    font-size: 62.5%; /* 10px == 1rem */
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%; /* 10px == 1rem */
+}
+
+:root {
+  --background: #fff8ee;
+  --primary: #cd3333;
+  --secondary: #29435c;
+  --mild-dark: #333333;
+  --dark-dark: #1a1a1a;
+  --dim-white: #fafafa;
+  --mild-white: #aaaaaa;
+  --white: #ffffff;
+  --horizontal-padding: 5rem;
+}
+
+body {
+  font-family: 'Lato' sans-serif !important;
+  min-height: 100vh;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  background: var(--background) !important;
+  color: var(--dark-dark) !important;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+}
+
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: .3rem;
+  padding: 1rem 1rem;
+  color: var(--white);
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0rem auto;
+  padding: 0rem 1.5rem;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 51.2rem) {
   :root {
-    --background: #fff8ee;
-    --primary: #cd3333;
-    --secondary: #29435c;
-    --mild-dark: #333333;
-    --dark-dark: #1a1a1a;
-    --dim-white: #fafafa;
-    --mild-white: #aaaaaa;
-    --white: #ffffff;
-    --horizontal-padding: 5rem;
+    --horizontal-padding: 1rem;
   }
-  
+
   body {
-    font-family: 'Lato' !important;
-    min-height: 100vh;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    background: var(--background) !important;
-    color: var(--dark-dark) !important;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    overflow-x: hidden;
+    font-size: 1.2rem;
   }
-  
-  button {
-    font-weight: bold;
-    border: none;
-    border-radius: .3rem;
-    padding: 1rem 1rem;
-    color: var(--white);
-    background-color: var(--primary);
-    cursor: pointer;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 98rem;
-    margin: 0rem auto;
-    padding: 0rem 1.5rem;
-  }
-  
-  .primary {
-    color: var(--primary);
-  }
-  
-  .hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+}

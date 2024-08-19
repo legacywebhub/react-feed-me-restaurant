@@ -1,7 +1,7 @@
 .single__item{
   margin: 0;
   width: 100%;
-
+  padding: 2rem var(--horizontal-padding)
 }
 
 .single__item__content {
