@@ -1,5 +1,5 @@
 import './HomePage.css';
-import Ad from "../../Components/Ad/Ad";
+// import Ad from "../../Components/Ad/Ad";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import TitleBanner from "../../Components/TitleBanner/TitleBanner";
@@ -19,7 +19,7 @@ function HomePage() {
       pageDescription={pageDescription}
       />
       <SearchSection />
-      <Ad />
+      {/* <Ad /> */}
       <MealSection />
       <Footer />
     </div>
