@@ -34,6 +34,7 @@ const SearchSection = () => {
     return () => clearTimeout(debounceTimeout);
 
   }, [query]);
+  
 
   const handleSearch = async (event) => {
     event.preventDefault();
