@@ -7,3 +7,16 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
+
+.back__button{
+    vertical-align: middle;
+    display: inline-flex;
+    gap: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search__result-container{
+    margin: auto;
+    padding: var(--horizontal-padding);
+}

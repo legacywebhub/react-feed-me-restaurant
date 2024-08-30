@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import "./MealPage.css";
 import mealsData from "../../Assets/Data/Data";
 import Header from "../../Components/Header/Header";
@@ -9,6 +9,7 @@ import Meal2 from "../../Components/Meal2/Meal2";
 import Loading from "../../Components/Loading/Loading";
 import NotFound from "../../Components/NotFound/NotFound";
 import MealImg from "../../Assets/Images/meal_img.jpg";
+import { IoArrowBack } from "react-icons/io5";
 
 
 const MealPage = () => {
@@ -16,6 +17,7 @@ const MealPage = () => {
     const [meal, setMeal] = useState(null); // State to store meal data
     const [similarMeals, setSimilarMeals] = useState([]); // State to fetch similar meals
     const [loading, setLoading] = useState(true); // State to handle loading
+    const navigate = useNavigate(); // Initialize useNavigate hook
 
     useEffect(() => {
       // Function to fetch meal data from API
@@ -63,6 +65,10 @@ const MealPage = () => {
         <Header />
         <TitleBanner pageTitle={meal.name} pageDescription="" />
         <section className="single__item__container">
+          {/* Back Button */}
+        <span className="back__button" onClick={() => navigate(-1)}>
+        <IoArrowBack /> Back
+        </span>
             <div className="single__item__description">
                 <div className="single__item__description__left">
                   <img

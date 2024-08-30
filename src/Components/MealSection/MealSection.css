@@ -7,3 +7,14 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
+
+.filter__buttons, .view__more__button {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.view__more__button{
+
+}
