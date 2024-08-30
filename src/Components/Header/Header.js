@@ -22,10 +22,10 @@ const Header = () => {
           <a href="/"><img src={Logo} alt="logo" className="logo" /></a>
         </div>
         <div className="main__header__right">
-          <span>Home</span>
-          <span>About</span>
-          <span>Contact</span>
-          <span>Blog</span>
+          <a href="/">Home</a>
+          <a href="/meal/1">Meal</a>
+          <a href="/search">Search</a>
+          <a href="/error">Error</a>
           <span>
             <FaBars className="menu" />
           </span>

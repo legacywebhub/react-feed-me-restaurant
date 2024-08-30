@@ -23,7 +23,7 @@ const MealSection = () => {
         setFilteredMeals(Array.isArray(data) ? data : []); // Initially show all meals
       } catch (error) {
         console.error('Error fetching meals data:', error);
-        setError('Failed to load meals. Showing local data instead.');
+        console.error('Failed to load meals. Showing local data instead.');
         setMeals(mealsData); 
         setFilteredMeals(mealsData); // Fallback to local data
       } finally {
