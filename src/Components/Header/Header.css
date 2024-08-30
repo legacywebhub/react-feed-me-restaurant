@@ -32,13 +32,14 @@
 }
 
 .main__header__right {
+    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.main__header__right span {
-    font-weight: bold;
+.main__header__right a {
+    color: var(--secondary);
 }
 
 .menu {

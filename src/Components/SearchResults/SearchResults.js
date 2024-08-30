@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 import Meal from '../Meal/Meal';
 import { IoArrowBack } from "react-icons/io5";
 
-const SearchResults = ({ searchQuery, results }) => {
+const SearchResults = ({ searchQuery = "", results = [] }) => {
   const navigate = useNavigate(); // Initialize useNavigate hook
 
   return (
