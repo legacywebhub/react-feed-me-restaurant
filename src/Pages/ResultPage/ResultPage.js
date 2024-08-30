@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './ResultPage.css';
-import Ad from "../../Components/Ad/Ad";
+// import Ad from "../../Components/Ad/Ad";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import TitleBanner from "../../Components/TitleBanner/TitleBanner";
@@ -25,7 +25,7 @@ const ResultPage = () => {
         pageDescription={pageDescription}
         />
         <SearchSection />
-        <Ad />
+        {/* <Ad /> */}
         <SearchResults
         searchQuery={searchQuery}
         results={results} />
