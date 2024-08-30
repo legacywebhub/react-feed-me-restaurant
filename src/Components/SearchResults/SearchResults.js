@@ -4,9 +4,9 @@ import Title from '../Title/Title'
 import Meal from  '../Meal/Meal'
 
 
-const SearchResults = ({ searchQuery, results }) => {
+const SearchResults = ({ searchQuery = "", results = [] }) => {
 
-  if (results && results.length < 1) {
+  if (results && results.length === 0) {
     return (
       <>
        <Title title={`No Results Found For ${searchQuery}`} />
